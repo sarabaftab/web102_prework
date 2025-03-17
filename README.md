@@ -4,7 +4,7 @@ Submitted by: **Muhammad Sarab Aftab**
 
 **GameManiacs** is a website for the company GameManiacs that displays information about the games they have funded.
 
-Time spent: **6** hours spent in total
+Time spent: **9** hours spent in total
 
 ## Required Features
 
