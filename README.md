@@ -1,32 +1,37 @@
-# WEB102 Prework - *Name of App Here*
+# WEB102 Prework - _GameManiacs_
 
-Submitted by: **Your Name Here**
+Submitted by: **Muhammad Sarab Aftab**
 
-**Name of your app** is a website for the company Sea Monster Crowdfunding that displays information about the games they have funded.
+**GameManiacs** is a website for the company GameManiacs that displays information about the games they have funded.
 
-Time spent: **X** hours spent in total
+Time spent: **6** hours spent in total
 
 ## Required Features
 
 The following **required** functionality is completed:
 
-* [ ] The introduction section explains the background of the company and how many games remain unfunded.
-* [ ] The Stats section includes information about the total contributions and dollars raised as well as the top two most funded games.
-* [ ] The Our Games section initially displays all games funded by Sea Monster Crowdfunding
-* [ ] The Our Games section has three buttons that allow the user to display only unfunded games, only funded games, or all games.
+- [ ] The introduction section explains the background of the company and how many games remain unfunded.
+- [ ] The Stats section includes information about the total contributions and dollars raised as well as the top two most funded games.
+- [ ] The Our Games section initially displays all games funded by Sea Monster Crowdfunding
+- [ ] The Our Games section has three buttons that allow the user to display only unfunded games, only funded games, or all games.
 
 The following **optional** features are implemented:
 
-* [ ] List anything else that you can get done to improve the app functionality!
+- [ ] List anything else that you can get done to improve the app functionality!
 
 ## Video Walkthrough
 
-Here's a walkthrough of implemented features:
+<h2>Here's a walkthrough of implemented features:</h2>
 
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src="assets/game_maniacs_demo.gif" 
+     title="Video Walkthrough" 
+     width="600" 
+     alt="Video Walkthrough" />
 
 <!-- Replace this with whatever GIF tool you used! -->
-GIF created with ...  
+
+GIF created with ...
+
 <!-- Recommended tools:
 [Kap](https://getkap.co/) for macOS
 [ScreenToGif](https://www.screentogif.com/) for Windows
@@ -34,11 +39,15 @@ GIF created with ...
 
 ## Notes
 
-Describe any challenges encountered while building the app.
+- I had some challenges filtering funded and unfunded games dynamically, but using JavaScript’s filter() method helped solve it.
+- Styling the black and gold theme took some experimenting, especially with hover effects and making sure the text had good contrast.
+- Adding the progress bar to show total funding was fun, but I had to tweak the CSS to make the overfunded section display correctly.
+- Embedding the GIF walkthrough took some extra effort to ensure it loaded properly from a local file.
+- Overall, this project was a great learning experience in JavaScript, UI/UX, and making a site feel more interactive!
 
 ## License
 
-    Copyright [yyyy] [name of copyright owner]
+    Copyright (c) 2024 Muhammad Sarab Aftab
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.

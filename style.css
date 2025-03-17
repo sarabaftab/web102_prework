@@ -1,75 +1,160 @@
-@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Poppins:wght@300;400;600&display=swap");
 
-body {
-    font-family: 'Cabin';
-    background-color: #758190;
+:root {
+  --primary-bg: #000000;
+  --secondary-bg: #121212;
+  --card-bg: #1e1e1e;
+  --gold: #ffbb00;
+  --text-color: #ffffff;
+  --hover-glow: rgba(255, 215, 0, 0.5);
 }
 
-#tentacles {
-    width: 50px;
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--primary-bg);
+  color: var(--text-color);
+}
+
+#thunder {
+  width: 60px;
+  filter: drop-shadow(0 0 10px var(--gold));
 }
 
 .header {
-    display: flex;
-    background-color: lightblue;
-    padding: 1%;
-    align-items: center;
-    margin-left: -10px;
-    margin-right: -10px;
-    margin-top: -10px;
+  display: flex;
+  background: var(--secondary-bg);
+  padding: 1%;
+  align-items: center;
+  margin: -10px;
+  box-shadow: 0px 4px 10px rgba(255, 215, 0, 0.3);
+}
+
+.header-text {
+  font-family: "Press Start 2P", sans-serif;
+  font-size: 20px;
+  color: var(--gold);
+  text-shadow: 2px 2px var(--gold);
 }
 
 .stats-container {
-    display: flex;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.stats-container:hover {
+  box-shadow: 0 0 20px var(--hover-glow);
 }
 
 .stats-card {
-    background-color: #a8b0bc;
-    border-radius: 7px;
-    padding: 1%;
-    margin: 1%;
-    width: 100%;
-    text-align: center;
+  background-color: var(--card-bg);
+  border-radius: 10px;
+  padding: 1%;
+  margin: 1%;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(255, 215, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
 }
 
-#num-contributions, #total-raised, #num-games {
-    font-size: 50px;
+.stats-card:hover {
+  transform: scale(1.05);
 }
 
+/* Numbers in Stats */
+#num-contributions,
+#total-raised,
+#num-games {
+  font-size: 50px;
+  color: var(--gold);
+  text-shadow: 2px 2px var(--gold);
+}
+
+/* Games Container */
 #games-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
+/* Game Cards */
 .game-img {
-    width: 100%;
-    border-radius: 5px;
-    box-shadow: 0 0 10px #FFFFFF;
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 0 15px var(--gold);
 }
 
 .game-card {
-    background-color: #FFFFFF;
-    padding: 1%;
-    margin: 1%;
-    width: 300px;
-    text-align: center;
-    border-radius: 7px;
+  background-color: var(--card-bg);
+  padding: 1%;
+  margin: 1%;
+  width: 300px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 0 10px var(--hover-glow);
+  transition: transform 0.3s ease-in-out;
 }
 
 .game-card:hover {
-    cursor: pointer;
-    box-shadow: 0 0 30px lightblue;
+  cursor: pointer;
+  transform: scale(1.05);
+  box-shadow: 0 0 20px var(--gold);
 }
 
+/* Button Styles */
 #button-container {
-    text-align: center;
+  text-align: center;
 }
 
 button {
-    font-family: 'Cabin';
-    border: none;
-    padding: 1%;
-    margin: 1%;
-    border-radius: 7px;
+  font-family: "Poppins", sans-serif;
+  border: none;
+  padding: 10px 20px;
+  margin: 10px;
+  border-radius: 7px;
+  font-size: 16px;
+  background: var(--gold);
+  color: var(--primary-bg);
+  transition: background 0.3s ease-in-out, transform 0.2s;
+}
+
+button:hover {
+  background: #caa600; /* Darker Gold */
+  color: var(--text-color);
+  transform: scale(1.1);
+}
+
+/* Funding Progress Bar */
+#funding-container {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.progress-bar {
+  width: 80%;
+  background: var(--secondary-bg);
+  border-radius: 10px;
+  height: 25px;
+  margin: 10px auto;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  box-shadow: 0 0 10px var(--gold);
+}
+
+.progress-bar-fill {
+  height: 100%;
+  background: var(--gold);
+  width: 0%;
+  border-radius: 10px 0 0 10px;
+  transition: width 1s ease-in-out;
+}
+
+.progress-bar-overfill {
+  height: 100%;
+  background: #db5801;
+  width: 0%;
+  border-radius: 0 10px 10px 0;
+  transition: width 1s ease-in-out;
 }
